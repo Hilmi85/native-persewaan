@@ -1,0 +1,18 @@
+*,
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hover effect for list items */
+.list-unstyled li:hover {
+    background-color: #7b5ca6; /* Ganti warna latar belakang saat di-hover sesuai keinginan Anda */
+    border-radius: 15px;
+    }
+  
+  /* Hover effect for logout link */
+  .list-unstyled li:last-child:hover a {
+    color: #ff0000; /* Ganti warna teks saat di-hover sesuai keinginan Anda */
+  }
+  

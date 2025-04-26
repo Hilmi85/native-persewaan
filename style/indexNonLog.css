@@ -1,0 +1,236 @@
+*,
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR TRANSPARANT */
+body {
+  padding-top: 50px; /* Menyesuaikan padding atas sesuai dengan tinggi navbar */
+}
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+}
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang navbar ketika discroll */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih tebal saat discroll */
+}
+/* ----------------------- */
+
+.navbar {
+  display: flex;
+  background-color: #f7acff;
+  border-bottom: 1px solid black;
+  border-radius: 7px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Properti box-shadow untuk bayangan */
+  transition: box-shadow 0.3s ease; /* Animasi ketika bayangan berubah */
+}
+
+.nav-link {
+  /* Ubah Text di droplink */
+  font-weight: bold;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.navbar-brand :hover {
+  background-color: #d59df2;
+  border-radius: 13px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navbar-nav :hover {
+  background-color: #d59df2;
+  border-radius: 13px;
+  transition: color 0, 5s ease-in-out;
+}
+
+.form-white.input-group > .form-control:focus {
+  border-color: #fff;
+  box-shadow: inset 0 0 0 1px #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#home {
+  background-image: linear-gradient(180deg, #ffbaff 0, #f7acff 25%, #d59df2 50%, #b58eda 75%, #997fc4 100%);
+}
+
+.card {
+  border-radius: 25px;
+  border-width: 2px;
+  border-color: black;
+}
+
+.card-hover {
+  transform: scale(1.05); /* Ubah skala kartu */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi transisi */
+}
+
+.card-img-top {
+  display: flex;
+  margin-top: 17px;
+}
+
+.info {
+  background-color: #997fc4;
+  border-radius: 5px;
+  height: 15vh;
+  width: 100%;
+}
+
+.scrolling-text-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-text {
+  display: inline-block;
+  animation: scrollText 10s linear infinite;
+  font-size: 24px;
+  margin-top: 7px;
+  color: black;
+  font-weight: bold;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#about {
+  background-color: #f5f5f5;
+}
+
+#product {
+  background-color: white;
+}
+
+.container-nav {
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron {
+  padding: 7rem;
+}
+
+.container {
+  display: fixed;
+  padding: 5rem;
+}
+
+
+/* FOOTER */
+
+.footer {
+  background-image: linear-gradient(180deg, #ffbaff 0, #f7acff 25%, #d59df2 50%, #b58eda 75%, #997fc4 100%); /* Warna latar belakang footer */
+  padding: 30px 0;
+  border-top: 1px solid #dee2e6; /* Garis atas footer */
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #000000; /* Warna ikon sosial */
+}
+
+.social-icons a:hover {
+  color: white; /* Warna ikon sosial saat dihover */
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  color: #000000; /* Warna teks footer */
+}
+
+/* Responsif untuk mobile */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  /* NAVBAR */
+  .navbar-nav .bi {
+    font-size: 18px; /* Ukuran ikon untuk tampilan smartphone */
+  }
+
+  .navbar-toggler-icon {
+    color: black; /* Ubah warna ikon toggle untuk tampilan smartphone */
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: black; /* Ubah warna teks navbar untuk tampilan smartphone */
+  }
+
+  .navbar-light .navbar-toggler {
+    border-color: black; /* Ubah warna garis toggle untuk tampilan smartphone */
+  }
+
+  .navbar-collapse {
+    /* Ubah warna latar belakang dropdown untuk tampilan smartphone  */
+    background-color: transparent;
+    border-bottom: 1.5px solid black;
+    border-radius: 5px;
+  }
+
+  .nav-link {
+    /* Ubah Text di droplink */
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  /* END NAVBAR */
+
+  /* START JUMBOTRON */
+  .jumbotron img {
+    width: 100%; /* Memastikan gambar penuh lebar pada tampilan smartphone */
+  }
+
+  .jumbotron h1 {
+    font-weight: bold;
+    font-size: 1.3rem; /* Ukuran font yang lebih kecil untuk judul */
+  }
+
+  .jumbotron p {
+    font-size: 0.8rem; /* Ukuran font yang lebih kecil untuk teks lead */
+  }
+  /* END JUMBOTRON */
+
+  /* START PRODUCT */
+  .card {
+    width: 100%; /* Membuat kartu penuh lebar pada tampilan smartphone */
+    margin-bottom: 20px; /* Menambahkan spasi antar kartu */
+  }
+  /* END PRODUCT */
+  header,
+  footer {
+    padding: 0.5em 0;
+  }
+}
