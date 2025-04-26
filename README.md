@@ -1,2 +1,2 @@
 # persewaan-baju-adat
-Built with HTML, CSS, JS, PHP, and MySQL
+A responsive and interactive web application developed using HTML, CSS, JavaScript for the front-end and PHP, MySQL for the back-end.
